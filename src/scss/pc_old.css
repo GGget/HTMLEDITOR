@@ -1,0 +1,186 @@
+/* footer compareDockContainer */
+.bottomStickyDock * {
+    margin: 0;
+    padding: 0;
+}
+.bottomStickyDock {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    width: 100%;
+    background-color: #EFEFEF;
+    border-top: 1px solid #949494;
+}
+
+.bottomStickyDock .compareDockContainer {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottomStickyDock .compareDockContainer .blue {
+    color: #0D5C91;
+}
+
+.bottomStickyDock .compareDockContainer .flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomStickyDock .compareDockContainer .content {
+    flex: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #EFEFEF;
+}
+
+.bottomStickyDock .compareDockContainer .content .left .feedback {
+    font: normal normal normal 16px/19px Lato;
+    height: 35px;
+    min-width: 108px;
+    border-right: solid 1px #0D5C91;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.bottomStickyDock .compareDockContainer .content .left .compare {
+    display: none;
+    font: normal normal normal 16px/19px Lato;
+    height: 35px;
+    padding-right: 40px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.bottomStickyDock .compareDockContainer .content .right .contact {
+    align-self: flex-end;
+    color: #000000;
+    font: normal normal normal 16px/19px Lato;
+}
+
+.bottomStickyDock .compareDockContainer .content .right .contact .compareTalkLabel {
+    font-family: Lato;
+}
+
+.bottomStickyDock .compareDockContainer .chatNow {
+    width: 150px;
+    height: 50px;
+    flex: none;
+
+    background-color: #0D5C91;
+    color: #FFFFFF;
+    font: normal normal bold 16px/19px Lato;
+    opacity: 1;
+}
+
+.bottomStickyDock .compareDockContainer .icon {
+    min-height: 16px;
+    min-width: 16px;
+    margin-right: 6px;
+}
+
+.bottomStickyDock .compareDockContainer .compareIcon {
+    background: url(https://p3-ofp.static.pub/fes/cms/2021/06/09/6bz0nl825ith3nuraet1l2l206wnqr533308.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bottomStickyDock .back2top {
+    display: none;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 10px;
+    top: -42px;
+    border-radius: 50%;
+    background: url(https://p1-ofp.static.pub/fes/cms/2021/04/15/f7zzfj6qkj2kncdy1kl1zjstuunoxq225003.svg) no-repeat;
+    background-size: cover;
+    background-color: #FFFFFF;
+    background-position: -1px;
+    cursor: pointer;
+}
+
+.bottomStickyDock .compareDockContainer .content .left {
+    display: flex;
+}
+
+@media screen and (max-width: 749px) {
+    .bottomStickyDock .compareDockContainer .content .left .feedback {
+        display: none;
+    }
+
+    .bottomStickyDock .compareDockContainer .content .left .compare {
+        padding-left: 10px;
+    }
+
+    .bottomStickyDock .compareDockContainer .content .right .contact {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1279px) {
+    .bottomStickyDock .compareDockContainer .content .right .contact {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .bottomStickyDock {
+        border-top: solid 1px #707070;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .bottomStickyDock .back2top{
+        right: calc(calc(50% - 960px) + 10px);
+    }
+}
+
+/* page style*/
+.commonFooter,
+.checkout_footer {
+    padding-bottom: 50px;
+}
+
+/* product builder page override */
+.pb_container .pb_footer.stickyBottom {
+    bottom: 50px;
+}
+
+/* cart page override */
+.checkout_footer {
+    padding-bottom: 50px;
+}
+
+.cartBody .summaryTotal footer {
+    bottom: 50px;
+}
+
+/* checkout page override*/
+.checkout_footer {
+    padding-bottom: 50px;
+}
+
+.checkout_order_price_summary .placeOrder {
+    bottom: 50px;
+}
+
+/* cto page override*/
+.CTO_Configurator .stickyBottom {
+    bottom: 50px;
+}
