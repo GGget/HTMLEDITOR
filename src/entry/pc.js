@@ -1,5 +1,5 @@
 import "@css/pc.scss"
 
-import JsObj from  "@js/pc.js";
+import JsObjoutput from  "@js/pc.js";
 
-export default JsObj;
+export default JsObjoutput();

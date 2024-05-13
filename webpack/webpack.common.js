@@ -7,8 +7,6 @@ module.exports = {
     context: path.resolve(__dirname, ".."),
     entry: {
         pc: './src/entry/pc.js',
-        // mobile: './src/entry/mobile.js',
-        // tablet: './src/entry/tablet.js',
     },
     output: {
         path: path.resolve(__dirname, '../dist'),
